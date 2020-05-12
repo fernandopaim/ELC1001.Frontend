@@ -19,7 +19,7 @@ export default class Login extends Component {
                     <Text style={{color: "#FFF", fontSize: 20, alignSelf: "center"}}>conectado com a natureza!</Text>
                 </View>
                 <View style={{flex: 1, alignContent: "flex-start"}}> 
-                    <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('SignIn')}>
+                    <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Looks')}>
                         <Text style={styles.text}>entrar</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('SignUp')}>
