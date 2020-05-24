@@ -88,7 +88,7 @@ export default class Looks extends Component {
     return (
       <SafeAreaView style={styles.safeArea}>
         <LinearGradient
-          colors={['#C58882', '#CFDBDB']}
+          colors={['#D6A7A4', '#CFDBDB']}
           style={styles.gradientContainer}
           start={{x: 0, y: 0}}
           end={{x: 0.3, y: 0.7}}>
@@ -141,18 +141,20 @@ const styles = StyleSheet.create({
 
   containerTitle: {
     alignItems: 'center',
-    height: 30,
+    height: 35,
     justifyContent: 'center',
     backgroundColor: '#FFF',
   },
 
   title: {
     textAlign: 'center',
+    fontSize: 17,
   },
 
   container: {
     flex: 1,
-    padding: 5,
+    paddingTop: 10,
+    padding: 8,
   },
 
   gridContainer: {
@@ -160,10 +162,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#FFF',
-    borderRadius: 10,
+    borderRadius: 15,
     margin: 5,
     padding: 5,
-    height: 200,
+    height: 170,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 5,
   },
 
   lookContainer: {
